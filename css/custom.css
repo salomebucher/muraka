@@ -1,0 +1,52 @@
+/* Theme Name: The Project - Responsive Website Template
+Author:HtmlCoder
+Author URI:http://www.htmlcoder.me
+Author e-mail:htmlcoder.me@gmail.com
+Version: 2.0.5
+Created:December 2014
+License URI:http://support.wrapbootstrap.com/
+File Description: Place here your custom CSS styles
+*/
+
+.flex-container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.flex-item {
+    width: auto;
+    height: 150px;
+    
+}
+.row grid-space-20 {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #113349;
+}
+.footer a, .list-icons li i {
+    color: white;
+}
+
+.subfooter {
+    background-color: #113349;
+}
+
+.footer h2.title {
+    color: white;
+}
+.footer {
+    color: white;
+}
+
+.padding-hor-clear {
+    color: white;
+}
+.list-icons li, .list li, .list li > a {
+    color: white;
+}
+.fa-tripadvisor:before, .fa-facebook:before, .fa-youtube-play:before, .fa-instagram:before   {
+    color: white;
+}
