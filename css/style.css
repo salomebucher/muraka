@@ -282,7 +282,7 @@ tbody {
 .subfooter {
   background-color: #f5f5f5;
   padding: 25px 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #003085;
 }
 
 .full-page .subfooter {
@@ -1620,7 +1620,7 @@ h5 + .separator {
 
 /*Footer*/
 .footer {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -7930,7 +7930,7 @@ h6.media-heading {
 }
 
 .large_white {
-  font-size: 42px;
+  font-size: 5em;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
   line-height: 1.2;

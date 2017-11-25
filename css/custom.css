@@ -16,22 +16,25 @@ File Description: Place here your custom CSS styles
 }
 .flex-item {
     width: auto;
-    height: 150px;
-    
+    height: 150px;  
+}
+
+.header .dark {
+background-color: #003085;	
 }
 .row grid-space-20 {
     margin-bottom: 10px;
 }
 
 .footer {
-    background-color: #113349;
+    background-color: #003085;
 }
 .footer a, .list-icons li i {
     color: white;
 }
 
 .subfooter {
-    background-color: #113349;
+    background-color: #003085;
 }
 
 .footer h2.title {
@@ -49,4 +52,15 @@ File Description: Place here your custom CSS styles
 }
 .fa-tripadvisor:before, .fa-facebook:before, .fa-youtube-play:before, .fa-instagram:before   {
     color: white;
+}
+#intrologo {
+	display: inline-flex;
+	align-content: center;
+	
+}
+.divingtitle {
+	margin-bottom: 20px;
+}
+#divingrow {
+	margin-bottom: 40px;
 }
