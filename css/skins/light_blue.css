@@ -450,7 +450,7 @@ header:not(.dark) .dropdown-menu > li.active > a i {
 
 /* second level menu item */
 .dark.header .dropdown-menu {
-  background-color: #2e3537;
+  background-color: #003085;
 }
 
 .dark.header .dropdown-menu .divider {

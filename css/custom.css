@@ -67,3 +67,13 @@ background-color: #003085;
 .ausflugslider { 
 	margin-bottom:  25px;
 }
+.speedboot {
+    position: relative;
+    font-weight: 500;
+}
+.speedbootduration {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-weight: 500;
+}
