@@ -67,7 +67,7 @@
 	<!-- "transparent-header": makes the header transparent and pulls the banner to top -->
 	<!-- "gradient-background-header": applies gradient background to header -->
 	<!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
-
+<body class=" ">
 
 	<!-- scrollToTop -->
 	<!-- ================ -->
@@ -94,7 +94,7 @@
 	<!-- ================ -->
 	<div class="page-wrapper">
 		<!-- header-container start -->
-
+<div class="header-container">
 		<!-- classes:  -->
 		<!-- "fixed": enables fixed navigation mode (sticky menu) e.g. class="header fixed clearfix" -->
 		<!-- "fixed-desktop": enables fixed navigation only for desktop devices e.g. class="header fixed fixed-desktop clearfix" -->
@@ -169,14 +169,18 @@
 												<li class="nav-item">
 													<a href="./ausfluege.html" class="nav-link">Ausflüge</a>
 												</li>
-												<li class="nav-item">
-													<a href="./tauchen.html" class="nav-link">Tauchen</a>
-												</li>
+												 <li class="nav-item dropdown">
+                                                        <a href="./tauchen.html"  id="sixth-dropdown" class="nav-link dropdown-toggle"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tauchen</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li ><a href="./tauchen.html">Muraka Diving</a></li>
+                                                            <li ><a href="./padikurse.html">PADI Kurse</a></li>
+                                                        </ul>
+                                                    </li>
 												<li class="nav-item">
 													<a href="#" class="nav-link">Keyodhoo</a>
 												</li>
 												<li class="nav-item">
-													<a href="#" class="nav-link">Anreise</a>
+													<a href="./anreise.html" class="nav-link">Anreise</a>
 												</li>
 												<li class="nav-item">
 													<a href="#" class="nav-link">Galerie</a>
@@ -198,9 +202,9 @@
 				</div>
 			</div>
 		</header>
-	</div>
+	
 	<!-- header end -->
-
+</div>
 	<!-- header-container end -->
 	<!-- banner start -->
 	<!-- ================ -->
@@ -406,7 +410,7 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
 	</div>
 	<!-- banner end -->
 
-	<div id="page-start"></div>
+	
 
 	<!-- section start -->
 	<!-- ================ -->
@@ -428,10 +432,6 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
 	<footer id="footer" class="clearfix ">
 
 		<!-- .footer start -->
-		<!-- ================ -->
-		<footer id="footer" class="clearfix ">
-
-			<!-- .footer start -->
 			<!-- ================ -->
 			<div class="footer">
 				<div class="container-fluid">
@@ -532,7 +532,8 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
 		</footer>
 	
 	<!-- footer end -->
-
+        </div>
+        <!-- page-wrapper end -->
 	<!-- JavaScript files placed at the end of the document so the pages load faster -->
 	<!-- ================================================== -->
 	<!-- Jquery and Bootstap core js files -->

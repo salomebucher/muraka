@@ -57,7 +57,7 @@
 
 
     </head>
-    <body>
+    
 
         <!-- body classes:  -->
         <!-- "boxed": boxed layout mode e.g. <body class="boxed"> -->
@@ -65,7 +65,7 @@
         <!-- "transparent-header": makes the header transparent and pulls the banner to top -->
         <!-- "gradient-background-header": applies gradient background to header -->
         <!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
-
+<body class=" ">
 
         <!-- scrollToTop -->
         <!-- ================ -->
@@ -92,6 +92,7 @@
         <!-- ================ -->
         <div class="page-wrapper">
             <!-- header-container start -->
+            <div class="header-container">
 
             <!-- classes:  -->
             <!-- "fixed": enables fixed navigation mode (sticky menu) e.g. class="header fixed clearfix" -->
@@ -164,14 +165,18 @@
                                                 <li class="nav-item">
                                                     <a href="./ausfluege.html" class="nav-link">Ausflüge</a>
                                                 </li>
-                                                <li class="nav-item">
-                                                    <a href="./tauchen.html" class="nav-link">Tauchen</a>
-                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a href="./tauchen.html"  id="sixth-dropdown" class="nav-link dropdown-toggle"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tauchen</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li ><a href="./tauchen.html">Muraka Diving</a></li>
+                                                            <li ><a href="./padikurse.html">PADI Kurse</a></li>
+                                                        </ul>
+                                                    </li>
                                                 <li class="nav-item">
                                                     <a href="#" class="nav-link">Keyodhoo</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">Anreise</a>
+                                                    <a href="./anreise.html" class="nav-link">Anreise</a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" class="nav-link">Galerie</a>
@@ -193,9 +198,9 @@
                     </div>
                 </div>
             </header>
-        </div>
+       
         <!-- header end -->
-
+ </div>
         <!-- header-container end -->
         <div class="banner clearfix">
 
@@ -399,48 +404,48 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
                     <div id="divingrow"class="row justify-content-lg-center">
                         <div class="col-lg-6">
                             <div class="shadow bordered">
-                                <div class="overlay-container">
-                                    <img src="images/portfolio-2.jpg" alt="">
-                                    <a href="images/portfolio-2.jpg" class="overlay-link popup-img" title="First image title">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="space-bottom"></div>
-                            <div class="row grid-space-20">
-                                <div class="col-3">
-                                    <div class="overlay-container">
-                                        <img src="images/portfolio-1.jpg" alt="">
-                                        <a href="images/portfolio-1.jpg" class="overlay-link small popup-img" title="Second image title">
-                                            <i class="fa fa-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="overlay-container">
-                                        <img src="images/portfolio-3.jpg" alt="">
-                                        <a href="images/portfolio-3.jpg" class="overlay-link small popup-img" title="Third image title">
-                                            <i class="fa fa-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="overlay-container">
-                                        <img src="images/portfolio-4.jpg" alt="">
-                                        <a href="images/portfolio-4.jpg" class="overlay-link small popup-img" title="Fourth image title">
-                                            <i class="fa fa-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="overlay-container">
-                                        <img src="images/portfolio-5.jpg" alt="">
-                                        <a href="images/portfolio-5.jpg" class="overlay-link small popup-img" title="Fifth image title">
-                                            <i class="fa fa-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="overlay-container">
+                  <img src="images/portfolio-2.jpg" alt="">
+                  <a href="images/portfolio-2.jpg" class="overlay-link popup-img" title="First image title">
+                    <i class="fa fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="space-bottom"></div>
+              <div class="row grid-space-20">
+                <div class="col-3">
+                  <div class="overlay-container">
+                    <img src="images/portfolio-1.jpg" alt="">
+                    <a href="images/portfolio-1.jpg" class="overlay-link small popup-img" title="Second image title">
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="overlay-container">
+                    <img src="images/portfolio-3.jpg" alt="">
+                    <a href="images/portfolio-3.jpg" class="overlay-link small popup-img" title="Third image title">
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="overlay-container">
+                    <img src="images/portfolio-4.jpg" alt="">
+                    <a href="images/portfolio-4.jpg" class="overlay-link small popup-img" title="Fourth image title">
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="overlay-container">
+                    <img src="images/portfolio-5.jpg" alt="">
+                    <a href="images/portfolio-5.jpg" class="overlay-link small popup-img" title="Fifth image title">
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
                         </div>
                         <div class="col-lg-6">
                             <p>Das Kalhu Muraka Guest House liegt an bester Lage auf Keyodhoo, direkt am Meer vor dem Strand, welcher für Touristen reserviert ist. Bei uns werden Sie sich wie zu Hause fühlen.<br>Wir planen unsere Tage individuell und ganz nach den Wünschen unserer Gäste. <br><br>
@@ -655,10 +660,10 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
             <!-- .subfooter end -->
 
         </footer>
-
+        
         <!-- footer end -->
        
-
+    </div>
 
     <!-- Jquery and Bootstap core js files -->
     <script type="text/javascript" src="plugins/jquery.min.js"></script>
