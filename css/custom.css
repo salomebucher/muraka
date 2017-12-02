@@ -44,6 +44,7 @@ background-color: #003085;
     color: white;
 }
 
+
 .padding-hor-clear {
     color: white;
 }
@@ -76,4 +77,18 @@ background-color: #003085;
     top: 0px;
     right: 0px;
     font-weight: 500;
+}
+.divepictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+.item {
+    margin-bottom: 30px;
+     border-radius: 120px;
+}
+.manta {
+    padding-top: 15px;
+    
 }
