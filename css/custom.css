@@ -44,6 +44,16 @@ background-color: #003085;
     color: white;
 }
 
+.card-block > div{
+    padding: 15px;
+}
+.card-block > div>h5{
+    color: #fff;
+     padding: 15px;
+    background-color: #003085;
+    line-height: 0.4em;
+};
+
 
 .padding-hor-clear {
     color: white;
@@ -79,9 +89,10 @@ background-color: #003085;
     font-weight: 500;
 }
 .divepictures {
+    margin: 25px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
    
 }
 .item {
