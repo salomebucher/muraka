@@ -103,3 +103,9 @@ background-color: #003085;
     padding-top: 15px;
     
 }
+.favicon {
+    display: inline;
+    height: 25px;
+    width: auto;
+    margin-right: 5px;
+}
