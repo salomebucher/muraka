@@ -446,7 +446,7 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
                                         </a>
                                     </div>
                                 </div>
-                                 <div class="col-3 invisible">
+                                <div class="col-3 invisible">
                                     <div class="overlay-container">
                                         <img src="images/gallery/guesthouse/06.jpg" alt="">
                                         <a href="images/gallery/guesthouse/06.jpg" class="overlay-link small popup-img gallery1" title="Abbey Road on Keyodhoo">
@@ -485,7 +485,7 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
                                 <li>3 Mahlzeiten </li>
                                 <li>Wasser, Tee, Kaffee, und eine Auswahl an Süssgetränken</li><li>Tägliche Ausflüge zu unbewohnten Inseln und Sandbänken mit dem Dhoani</li><li>Geführte Schnorcheltouren</li><li>1x Nachtfischen pro Woche<br><br></li></ul> 
                         </div>
-                        
+
                         <div class="gallery col-lg-6">
                             <div class="shadow bordered">
                                 <div class="overlay-container package">
@@ -531,7 +531,7 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="space-bottom"></div>
                     <div class="separator-2"></div>
@@ -681,11 +681,38 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
                                                         <textarea class="form-control" rows="4" id="message2" placeholder="Ihre Nachricht" name="message2"></textarea>
                                                         <i class="fa fa-pencil form-control-feedback"></i>
                                                     </div>
-                                                    <?php
-                                                        $text = "name2" . "email2" . "message2"   
-                                                        mail("info@murakadiving.com", "Neue Nachricht von Webseite" , $text,"From=info@murakadiving.com")
-                                                    ?>
+
+
+
+
                                                     <input type="submit" value="Senden" class="margin-clear submit-button radius-50 btn btn-default">
+                                               <?php
+/* === Daten aus dem Formular auslesen und in Variablen speichern === */
+
+$name = 'Name' . $_POST['name2'];
+$email = 'Email' . $_POST['email2'];
+$nachricht = 'Nachricht' $_POST['message2'];
+
+/* === Empfängeradresse und Betreff === */
+
+$an = 'info@murakadiving.com'; //Hier Ihre E-Mail-Adresse eintragen
+$betreff = "Kontaktformularnachricht";
+
+
+/* === Wenn Bedingung erfüllt, dann E-Mail abschicken - andernfalls Fehlermeldung ausgeben === */
+
+if ((!empty($name))&&(!empty($email))&&(!empty($nachricht))) {
+
+mail($an, $betreff, $name . $nachricht, 'From:' . $email); //Mail versenden
+
+echo 'Ihre Kontaktnachricht wurde zugestellt. Sie werden bald möglichst eine Antwort erhalten.';
+}
+
+else {
+echo 'Sie müssen alle Felder ausfüllen. <a href="about.html">Zurück</a>';
+}
+?>
+                                                
                                                 </form>
                                             </div>
                                         </div>
@@ -737,9 +764,9 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
         <script type="text/javascript" src="plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
         <script type="text/javascript" src="plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
         <script type="text/javascript" src="plugins/rs-plugin-5/js/extensions/revolution.extension.video.min.js"></script>
-<script type="text/javascript" src="plugins/rs-plugin-5/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="plugins/rs-plugin-5/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="plugins/rs-plugin-5/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="plugins/rs-plugin-5/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="plugins/rs-plugin-5/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="plugins/rs-plugin-5/js/extensions/revolution.extension.navigation.min.js"></script>
         <!-- Isotope javascript -->
         <script type="text/javascript" src="plugins/isotope/imagesloaded.pkgd.min.js"></script>
         <script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
@@ -763,14 +790,14 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
         <!-- Custom Scripts -->
         <script type="text/javascript" src="js/custom.js"></script>
         <script>$('.gallery').each(function() { // the containers for all your galleries
-    $(this).magnificPopup({
-        delegate: 'a', // the selector for gallery item
-        type: 'image',
-        gallery: {
-          enabled:true
-        }
-    });
-});
+                $(this).magnificPopup({
+                    delegate: 'a', // the selector for gallery item
+                    type: 'image',
+                    gallery: {
+                        enabled:true
+                    }
+                });
+            });
         </script>
     </body>
 </html>
