@@ -65,8 +65,7 @@ background-color: #003085;
     color: white;
 }
 #intrologo {
-	display: inline-flex;
-	align-content: center;
+	margin: 10px auto;
 	
 }
 .divingtitle {

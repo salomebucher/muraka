@@ -393,7 +393,7 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
                             <div class="separator-2"></div>
                             <h2 class="text-center title">Kalhu Muraka Guest House <strong>unser angebot</strong></h2>
                             <div class="separator with-icon"><i class="fa fa-diamond"></i></div>
-                            <p class="large text-center">Lieben Sie das Individuelle?<br>Dann sind Sie bei uns goldrichtig!<br>Kein Massentourismus sondern Urlaub in kleinen Gruppen.<br> Möchten Sie Urlaub mit der ganzen Familie oder mit Ihren Freunden verbringen und ganz unter sich sein? Dann buchen Sie alle 3 Zimmer, und das gesamte Team wird sich nur um Sie kümmern.<br><br> <img id="intrologo" src="images/GH-Logo.png"></p>
+                            <p class="large text-center">Lieben Sie das Individuelle?<br>Dann sind Sie bei uns goldrichtig!<br>Kein Massentourismus sondern Urlaub in kleinen Gruppen.<br> Möchten Sie Urlaub mit der ganzen Familie oder mit Ihren Freunden verbringen und ganz unter sich sein? Dann buchen Sie alle 3 Zimmer, und das gesamte Team wird sich nur um Sie kümmern.<br></p><img id="intrologo" src="images/GH-Logo.png">
 
                         </div>
 
@@ -681,6 +681,10 @@ data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
                                                         <textarea class="form-control" rows="4" id="message2" placeholder="Ihre Nachricht" name="message2"></textarea>
                                                         <i class="fa fa-pencil form-control-feedback"></i>
                                                     </div>
+                                                    <?php
+                                                        $text = "name2" . "email2" . "message2"   
+                                                        mail("info@murakadiving.com", "Neue Nachricht von Webseite" , $text,"From=info@murakadiving.com")
+                                                    ?>
                                                     <input type="submit" value="Senden" class="margin-clear submit-button radius-50 btn btn-default">
                                                 </form>
                                             </div>
